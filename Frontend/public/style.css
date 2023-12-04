@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    background-color: #090c13;
+}
+
+.page1 {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.page1 video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.navbar {
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
+    transition: all 0.5s ease;
+    z-index: 500;
+}
+
+.hero-section {
+    width: fit-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.hero-section h3 {
+    text-align: center;
+}
+
+.hero-section h1 {
+    color: white;
+    text-align: center;
+    font-size: 8vw;
+}
+
+.hero-span {
+    color: white;
+    /* animation: hero-text 2s ease infinite; */
+}
+
+.hero-section p {
+    text-align: center;
+}
+
+input[type=email] {
+    width: 500px;
+    height: 50px;
+    padding-left: 1em;
+    outline: none;
+    border: none;
+    font-size: 100%;
+    border-radius: 10px;
+}
+
+.email-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+}
+
+.email-container button {
+    height: 50px;
+    padding: 0 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+}
+
+.email-container button:hover {
+    cursor: pointer;
+    animation: btnA 2s ease infinite;
+}
+
+.navbar img {
+    width: 100px;
+    filter: invert();
+}
+
+.navbar i {
+    font-size: 30px;
+    color: white;
+}
+
+.page4 h2 {
+    padding: 0;
+}
+
+.apod {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.apod h1, h3, p {
+    color: white;
+}
+
+.credit {
+    color: white;
+}
+
+.apod h1 {
+    padding-bottom: 15px;
+    font-weight: 300;
+}
+
+button:hover {
+    cursor: pointer;
+    animation: btnA 2s ease infinite;
+}
+
+.apod p {
+    padding-bottom: 15px;
+}
+
+.apod img {
+    width: 340px;
+    border-radius: 15px;
+    box-shadow: 0 0 7px white;
+}
+
+/* .apod-description {
+    width: 50%;
+} */
+
+.hero-head {
+    font-size: 3rem;
+    padding-bottom: 1em;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+.page2 {
+    /* background-image: url(https://www.solarsystemscope.com/textures/download/2k_stars.jpg); */
+    padding: 4%;
+    margin: 2rem;
+}
+
+.page3 {
+    padding: 4%;
+    /* background-color: #18182c; */
+    margin: 2rem;
+}
+
+.page3 h1 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+
+.search-box {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-box input {
+    border-radius: 10px;
+    padding-left: 2em;
+    width: 250px;
+    outline: none;
+    border: none;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.search-bar {
+    margin: 10px 0;
+}
+
+button {
+    border-radius: 10px;
+}
+
+.search-box button {
+    height: 30px;
+    border: none;
+    padding: 5px 15px;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2em;
+}
+.map {
+    width: 100%;
+}
+
+.main-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-grid {
+    background: white;
+    width: fit-content;
+    padding: 30px 40px;
+    margin: 20px 0;
+}
+
+.user-grid h2 {
+    padding-bottom: 10px;
+}
+
+.result-grid {
+    background-color: #fff;
+    width: fit-content;
+    padding: 30px 40px;
+}
+
+.result-grid h1 {
+    color: black;
+    padding-bottom: 10px;
+}
+
+.color-red {
+    color: red;
+}
+
+.color-green {
+    color: rgb(3 204 31);
+}
+
+.page4 {
+    padding: 4%;
+    /* background-image: url(https://www.solarsystemscope.com/textures/download/2k_stars.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 2rem;
+}
+
+.page4 h1, h2 {
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.input-dates {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1em;
+    padding: 2rem;
+}
+
+.input-dates h2 {
+    color: white;
+}
+
+.date-submit {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.neo {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 1em;
+}
+
+.neo p, span, h2 {
+    color: black;
+}
+
+.neo-data {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.neo h2 {
+    display: inline;
+    padding-bottom: 1em;
+    padding-right: 1em;
+}
+
+.is-hazard {
+    background-color: red;
+    border-radius: 10px;
+    padding: 0 6px;
+}
+
+.not-hazard {
+    background-color: rgb(76, 246, 76);
+    border-radius: 10px;
+    padding: 0 6px;
+}
+
+input[type=date] {
+    width: 10rem;
+    height: 2rem;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.neo-name-hazard {
+    margin-bottom: 1em;
+}
+
+.date-submit button {
+    width: 90px;
+    height: 2rem;
+}
+
+.load-more {
+    text-align: center;
+}
+
+.load-more button {
+    width: 90px;
+    height: 30px;
+}
+
+.page-head {
+    font-size: 2.5em;
+}
+
+.map-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sat-data {
+    position: absolute;
+    bottom: 30%;
+    left: 3%;
+}
+.sat-data p {
+    font-weight: 100;
+    font-size: 0.8vw;
+    text-align: center;
+}
+
+.marker-blank {
+    width: 55%;
+    height: 50%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    text-align: center;
+}
+
+.iss {
+    width: 10%;
+    position: absolute;
+    bottom: calc(18.36% - 25px);
+    left: calc(50% - 25px + (79.5%/2));
+    animation: blink 1s ease infinite;
+    transition: all .5s ease;
+}
+
+.cur-location {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    bottom: calc(18.36% - 5px);
+    left: calc(50% - 5px + (79.5%/2));
+    animation: blink 1s ease infinite;
+}
+
+.iss:hover {
+    cursor: pointer;
+}
+
+@keyframes blink {
+    0% {
+        filter: drop-shadow(0 0 0px white);
+    }
+
+    100% {
+        filter: drop-shadow(0 0 10px white);
+    }
+}
+
+/* @keyframes hero-text {
+    0% {
+        filter: drop-shadow(0 0 5px #cbe58e);
+    }
+    25% {
+        filter: drop-shadow(0 0 5px #a1ce3f);
+    }
+    50% {
+        filter: drop-shadow(0 0 5px #107e57);
+    }
+    75% {
+        filter: drop-shadow(0 0 5px #014760);
+    }
+    100% {
+        filter: drop-shadow(0 0 5px #cbe58e);
+    }
+} */
+
+@keyframes btnA {
+    0% {
+        filter: drop-shadow(0 0 5px #cbe58e);
+        color: #cbe58e;
+    }
+    25% {
+        filter: drop-shadow(0 0 5px #a1ce3f);
+        color: #a1ce3f;
+    }
+    50% {
+        filter: drop-shadow(0 0 5px #107e57);
+        color: #107e57;
+    }
+    75% {
+        filter: drop-shadow(0 0 5px #014760);
+        color: #014760;
+    }
+    100% {
+        filter: drop-shadow(0 0 5px #cbe58e);
+        color: #cbe58e;
+    }
+}
+
+
+.loaded-results {
+    display: none;
+}
+
+.show-more {
+    display: block;
+}
+
+.loader {
+    transition: width 1s ease;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(0, 225, 255);
+    box-shadow: 0 0 20px rgb(0, 225, 255);
+    position: fixed;
+    z-index: 99;
+    top: 0;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100vh;
+    width: 50vw;
+    top: 0;
+    right: 0%;
+    transform: translateX(100%);
+    background-color: #090c13;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    transition: transform 0.5s ease;
+    overscroll-behavior: none;
+}
+
+.sidebar ul li {
+    list-style-type: none;
+    color: white;
+    font-size: 2.1vw;
+    margin: 2rem 0;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.sidebar ul li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    display: inline-block;
+    transform: translate(-100%, -50%) rotate(45deg);
+    transition: all 0.3s ease;
+}
+
+.sidebar ul li:hover {
+    transform-origin: left;
+    transform: scale(1.1);
+}
+
+.sidebar ul li:hover::before {
+    transform-origin: center;
+    transform: rotate(180deg) translate(100%, 50%) scale(1);
+}
+
+.sidebar i {
+    cursor: pointer;
+    position: absolute;
+    top: 7%;
+    right: 10%;
+    color: white;
+    font-size: 2rem;
+}
+.sidebar a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer {
+    width: 100%;
+    background-color: #1C2742;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer img {
+    width: 100px;
+    filter: invert();
+}
+
+
+@media screen and (max-width: 600px) {
+    input[type=email] {
+        width: 340px;
+        height: 40px;
+        margin-bottom: 15px;
+    }
+
+    .email-container button {
+        height: 40px;
+    }
+
+    .hero-section p {
+        font-size: 0.8rem;
+        padding: 0 20px;
+    }
+
+    .hero-head, .page-head {
+        font-size: 2rem;
+    }
+
+    .page4 h1 {
+        font-size: 2rem;
+    }
+
+    .page4 p {
+        font-size: 0.8rem;
+    }
+
+    .apod p {
+        font-size: 0.8rem;
+    }
+
+    .page3P {
+        font-size: 0.8rem;
+    }
+
+    .navbar {
+        padding: 0 2rem;
+    }
+
+    .hero-section {
+        top: 30%;
+    }
+
+    .page3 {
+        padding: 0;
+    }
+
+    .page4 {
+        padding: 0;
+    }
+    
+    .page2 {
+        padding: 0;
+    }
+
+    .input-dates h2 {
+        font-size: 1rem;
+    }
+
+    .input-dates {
+        padding: 0;
+    }
+    .page4 h1 {
+        font-size: 2rem;
+    }
+
+    .neo-results h1 {
+        font-size: 1.3rem;
+    }
+
+    .neo h2 {
+        font-size: 1rem;
+    }
+
+    .footer img {
+        width: 60px;
+    }
+
+    .footer p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    input[type=email] {
+        margin-bottom: 15px;
+    }
+
+
+    .navbar img {
+        width: 80px;
+    }
+
+    .navbar i {
+        font-size: 20px;
+    }
+
+    .hero-section h3 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .apod img {
+        width: 250px;
+    }
+}
+
