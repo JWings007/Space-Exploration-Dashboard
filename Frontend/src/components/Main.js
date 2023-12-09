@@ -6,6 +6,7 @@ import axios from "axios";
 import Sidebar from "./Sidebar";
 import satellite from "../satellite.png"
 import Footer from "./Footer";
+require('dotenv').config();
 
 function Main() {
   const date = new Date();
